@@ -7,3 +7,4 @@ import App from './App';
 //when its not accepting any parameter we self close the parameter
 ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
 
+ 
