@@ -56,7 +56,7 @@ function App() {
       {person.age}
       <button onClick={ageHandler}>Click ME</button>
       <br />
-      <button onClick={countHandler}>Click</button>
+      <button onClick={countHandler}>Click button</button>
       {count})
     </div>
   );
