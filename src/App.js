@@ -1,5 +1,6 @@
 //file name with capital letter is a component
 import { useState } from "react";
+import Header from "./components/Header";
 
 function App() {
   //we can supply array objects but wont getit like this
@@ -52,13 +53,16 @@ function App() {
     setCount(() => count + 1);
   }
   return (
-    <div>
-      {person.age}
-      <button onClick={ageHandler}>Click ME</button>
-      <br />
-      <button onClick={countHandler}>Click button</button>
-      {count})
-    </div>
+    <>
+      <Header />
+      <div>
+        {person.age}
+        <button onClick={ageHandler}>Click</button>
+        <br />
+        <button onClick={countHandler}>Click button</button>
+        {count})
+      </div>
+    </>
   );
 }
 
