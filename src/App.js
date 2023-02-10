@@ -23,6 +23,10 @@ function App() {
 
 export default App;
 
-
-
+// side effect, getting form external server orapi so , itwill take some time getting that 
+//data from external api this code is async storing in user, after a whole m 
+// react is always watching the state change when it happens 
+//it rerenders so we see loading and the tile after it the actual data is fetched
+// we initially saw loading because user was null and later we saw the actual content. similar to loading 
+// and seeing for user?.title 
 //optional channing operator is used to check if the object is defined or not
