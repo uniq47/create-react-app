@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "./App.css";
 function App() {
   const [user, setUser] = useState(null);
   console.log("before useEffect");
@@ -15,7 +15,7 @@ function App() {
 
   console.log("after useEffect");
      //check if there is user, if yes then display the title else display loading
-  return <div>{user?.title || <h1>loading...</h1>}</div>;
+  return <div className = "rootElement">{user?.title || <h1>loading...</h1>}</div>;
   // user? user.title : <h1>Loading...</h1>
   //if user not defined 
   //user?.title: <h1>Loading...</h1> means that if user is defined then only check for title else display loading
